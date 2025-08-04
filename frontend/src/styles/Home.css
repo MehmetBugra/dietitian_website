@@ -1,0 +1,119 @@
+.hero-section {
+  padding: 180px 0;
+  background: linear-gradient(135deg, var(--primary-light) 0%, #ffffff 100%);
+  text-align: left;
+}
+
+.hero-section h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  max-width: 500px;
+}
+
+.hero-image-placeholder {
+    width: 100%;
+    height: 500px;
+    background-image: url('https://i.imgur.com/example.png'); /* Replace with a real image URL */
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.1);
+}
+
+.features-section .feature-item {
+  padding: 2.5rem;
+  background: var(--card-background);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px var(--shadow-color);
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.features-section .feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px var(--shadow-color);
+}
+
+.features-section .icon-box {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(to right, var(--primary-color), var(--primary-dark));
+  color: white;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.detailed-features-section .feature-image-placeholder {
+  width: 100%;
+  height: 450px;
+  background-color: #EAECEE;
+  border-radius: 20px;
+}
+
+.testimonials-section {
+  background-color: var(--section-bg-color);
+}
+
+.testimonials-section .testimonial-item {
+  padding: 2.5rem;
+  background: var(--card-background);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px var(--shadow-color);
+}
+
+.testimonials-section .author {
+  margin-top: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.cta-section {
+  padding: 100px 0;
+  background-image: linear-gradient(to right, var(--secondary-color), #6C3483);
+  color: white;
+  text-align: center;
+  border-radius: 20px;
+  margin: 50px 0;
+}
+
+.cta-section h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: white;
+}
+
+.cta-section p {
+  margin: 1rem 0 2rem 0;
+}
+
+.footer {
+  background-color: var(--heading-color);
+  color: #BDC3C7;
+  padding: 60px 0;
+}
+
+.footer h5 {
+    color: white;
+}
+
+.footer a {
+  color: #BDC3C7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}

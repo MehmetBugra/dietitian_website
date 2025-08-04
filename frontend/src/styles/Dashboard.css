@@ -1,0 +1,7 @@
+.dashboard-card {
+  background: var(--card-background);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-color);
+  height: 100%;
+}

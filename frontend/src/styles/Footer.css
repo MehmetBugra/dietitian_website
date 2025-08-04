@@ -1,0 +1,26 @@
+.footer {
+  background-color: var(--heading-color);
+  color: #BDC3C7;
+}
+
+.footer h5 {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.footer a {
+  color: #BDC3C7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 5px 0;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: var(--primary-color);
+}
+
+.footer .list-unstyled li {
+  margin-bottom: 0.5rem;
+}
