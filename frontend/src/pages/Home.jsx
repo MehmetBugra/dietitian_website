@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import '../styles/Home.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -10,16 +9,16 @@ const Home = () => {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
-              <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+              <div>
                 <h1 className="display-3">Danışan Yönetiminde Devrim</h1>
                 <p className="lead">Diyetisyenim, iş akışınızı basitleştirir, danışan bağlılığını artırır ve işinizi büyütmenize yardımcı olur.</p>
                 <Link to="/register" className="btn btn-primary btn-lg">14 Gün Ücretsiz Dene</Link>
-              </motion.div>
+              </div>
             </div>
             <div className="col-lg-6">
-              <motion.div initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.8, delay: 0.2 }}>
+              <div>
                 <div className="hero-image-placeholder"></div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
@@ -115,39 +114,6 @@ const Home = () => {
           <Link to="/register" className="btn btn-light btn-lg">Hemen Başla</Link>
         </div>
       </section>
-
-      <footer className="footer section-padding">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-4 mb-4 mb-lg-0">
-              <h5>Diyetisyenim</h5>
-              <p className="text-muted">Danışan yönetiminizi kolaylaştıran modern çözüm.</p>
-            </div>
-            <div className="col-lg-2 col-md-6 mb-4 mb-lg-0">
-              <h5>Hızlı Linkler</h5>
-              <ul className="list-unstyled">
-                <li><Link to="/">Ana Sayfa</Link></li>
-                <li><Link to="/features">Özellikler</Link></li>
-                <li><Link to="/pricing">Fiyatlandırma</Link></li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">
-              <h5>Destek</h5>
-              <ul className="list-unstyled">
-                <li><Link to="/faq">S.S.S.</Link></li>
-                <li><Link to="/contact">İletişim</Link></li>
-              </ul>
-            </div>
-            <div className="col-lg-3">
-              <h5>İletişim</h5>
-              <p className="text-muted">info@diyetisyenim.app</p>
-            </div>
-          </div>
-          <div className="text-center mt-5 border-top pt-4">
-            <p className="text-muted small">&copy; {new Date().getFullYear()} Diyetisyenim. Tüm Hakları Saklıdır.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 };

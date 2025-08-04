@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
 import '../styles/Pricing.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
@@ -42,15 +41,7 @@ const Pricing = () => {
           </button>
         </div>
 
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={billingCycle}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="row mt-5"
-          >
+        <div className="row mt-5">
             {packages[billingCycle].map((pkg, index) => (
               <div key={index} className="col-lg-4 col-md-6 mb-4">
                 <div className={`pricing-card ${pkg.popular ? 'popular' : ''}`}>
@@ -70,8 +61,7 @@ const Pricing = () => {
                 </div>
               </div>
             ))}
-          </motion.div>
-        </AnimatePresence>
+        </div>
       </div>
     </div>
   );

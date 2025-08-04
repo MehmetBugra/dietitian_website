@@ -1,28 +1,15 @@
-import { motion } from 'framer-motion';
 import '../styles/Features.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-const FeatureSection = ({ title, description, features, imageUrl, reverse = false }) => {
+const FeatureSection = ({ title, description, features, reverse = false }) => {
   return (
     <section className="feature-section">
       <div className="container">
         <div className={`row align-items-center ${reverse ? 'flex-row-reverse' : ''}`}>
-          <motion.div 
-            className="col-lg-6" 
-            initial={{ opacity: 0, x: reverse ? 50 : -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="col-lg-6">
             <div className="feature-image-placeholder"></div>
-          </motion.div>
-          <motion.div 
-            className="col-lg-6" 
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
+          </div>
+          <div className="col-lg-6">
             <div className="feature-content">
               <h3>{title}</h3>
               <p className="lead">{description}</p>
@@ -32,7 +19,7 @@ const FeatureSection = ({ title, description, features, imageUrl, reverse = fals
                 ))}
               </ul>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>
