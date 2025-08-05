@@ -14,18 +14,27 @@ function App() {
   return (
     <>
       <ScrollToTop />
-      <Navbar />
-      <main className="app-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/features" element={<Features />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
-      </main>
-      <Footer />
+      <Routes>
+        {/* Dashboard Route - Full Screen Without Navbar/Footer */}
+        <Route path="/dashboard" element={<Dashboard />} />
+        
+        {/* Regular Routes - With Navbar/Footer */}
+        <Route path="/*" element={
+          <>
+            <Navbar />
+            <main className="app-content">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/features" element={<Features />} />
+                <Route path="/pricing" element={<Pricing />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/register" element={<Register />} />
+              </Routes>
+            </main>
+            <Footer />
+          </>
+        } />
+      </Routes>
     </>
   );
 }
