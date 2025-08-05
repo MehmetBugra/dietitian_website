@@ -7,6 +7,8 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import Features from './pages/Features';
+import FeaturesPro from './pages/FeaturesPro';
+import FeaturesDanisan from './pages/FeaturesDanisan';
 import Pricing from './pages/Pricing';
 import './App.css';
 
@@ -26,6 +28,8 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/features" element={<Features />} />
+                <Route path="/features/pro" element={<FeaturesPro />} />
+                <Route path="/features/danisan" element={<FeaturesDanisan />} />
                 <Route path="/pricing" element={<Pricing />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />

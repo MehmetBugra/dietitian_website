@@ -48,6 +48,16 @@
   font-size: 2rem;
 }
 
+.footer-logo-img {
+  height: 32px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.footer-brand .brand-title:hover .footer-logo-img {
+  transform: scale(1.1);
+}
+
 .footer-brand .brand-description {
   color: #b0b8c4;
   font-size: 0.95rem;

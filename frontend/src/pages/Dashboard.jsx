@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import '../styles/Dashboard.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import logo from '../assets/yazisiz_logo.png';
 
 const Dashboard = () => {
   const [activeSection, setActiveSection] = useState('overview');
@@ -552,7 +553,7 @@ const Dashboard = () => {
             <i className="bi bi-list"></i>
           </button>
           <div className="brand">
-            <i className="bi bi-heart-pulse"></i>
+            <img src={logo} alt="Diyetisyenim Logo" className="dashboard-logo-img" />
             <span>Diyetisyenim</span>
           </div>
         </div>

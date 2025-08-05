@@ -33,14 +33,14 @@ const FeatureSection = ({ title, description, features, reverse = false }) => {
     );
 };
 
-const Features = () => {
+const FeaturesPro = () => {
     return (
         <div className="features-page">
             <header className="features-page-header">
                 <div className="container">
-                    <h1>Uygulama Özellikleri</h1>
+                    <h1>Diyetisyenim-Pro Özellikleri</h1>
                     <p className="lead col-md-8 mx-auto">
-                        Diyetisyenim, işinizi bir sonraki seviyeye taşımanız
+                        Diyetisyenim-Pro, işinizi bir sonraki seviyeye taşımanız
                         için tasarlandı. İşte size sunduğumuz bazı güçlü
                         özellikler.
                     </p>
@@ -48,37 +48,48 @@ const Features = () => {
             </header>
 
             <FeatureSection
-                title="Kapsamlı Danışan Yönetimi"
-                description="Tüm danışanlarınızın bilgilerini, geçmişini ve ilerlemesini tek bir ekranda görün. Notlar alın, dosyalar yükleyin ve her detayı kontrol altında tutun."
+                title="Gelişmiş Randevu Yönetimi"
+                description="Cihaz ve danışmanlık randevularınızı tek bir panelden yönetin. Zamanlamaları değiştirin, detayları kaydedin ve geçmiş randevulara kolayca ulaşın."
                 features={[
-                    "Detaylı anamnez formu",
-                    "Ölçüm ve ilerleme takibi",
-                    "Kişiye özel notlar ve belgeler",
+                    "Cihaz & danışmanlık randevusu ayrımı",
+                    "Zamanlama ve verilerin esnek yönetimi",
+                    "Geçmiş randevulara erişim",
                 ]}
             />
 
             <FeatureSection
-                title="Akıllı Randevu ve Takvim"
-                description="Kendi çalışma saatlerinizi belirleyin, danışanlarınız online randevu alsın. Takviminiz otomatik olarak güncellensin, çakışmalar ve unutulan randevular son bulsun."
+                title="Kapsamlı Danışan Takibi"
+                description="Danışanlarınızı sisteme kolayca ekleyin, tüm ölçüm ve paket bilgilerini tek ekrandan yönetin."
                 features={[
-                    "Online randevu sistemi",
-                    "Otomatik hatırlatmalar",
-                    "Google Calendar entegrasyonu",
+                    "Kolay danışan ekleme",
+                    "Paket ve kullanım hakkı takibi",
+                    "Diyet listeleri ve ölçüm verileri kaydı",
                 ]}
                 reverse={true}
             />
 
             <FeatureSection
-                title="Esnek Diyet Planları"
-                description="Danışanlarınıza saniyeler içinde kişiselleştirilmiş planlar atayın."
+                title="Randevu Esnası Araçları"
+                description="Randevu sırasında ihtiyaç duyduğunuz her şey parmaklarınızın ucunda. Diyet planları otomatik olarak Danışan uygulamasına iletilir."
                 features={[
-                    "Görsel destekli tarif bankası",
-                    "Hazır şablonlar ve kişiselleştirme",
-                    "PDF olarak dışa aktarma",
+                    "Beslenme danışmanlığında: Anamnez, tartı özeti, diyet planı",
+                    "Cihaz randevularında: Süre, kalori ve cihaz istatistikleri",
+                    "Planlanan öğün saatlerine otomatik bildirim",
                 ]}
+            />
+
+            <FeatureSection
+                title="Hızlı ve Kolay Muhasebe"
+                description="Aylık gelir ve iadelerinizi takip edin. Finansal özetlerle kontrolü elinizde tutun."
+                features={[
+                    "Paket satış gelirleri takibi",
+                    "İade ve ödeme hareketleri",
+                    "Aylık performans özeti",
+                ]}
+                reverse={true}
             />
         </div>
     );
 };
 
-export default Features;
+export default FeaturesPro;

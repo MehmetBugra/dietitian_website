@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/Footer.css';
+import logo from '../assets/yazisiz_logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,7 +46,7 @@ const Footer = () => {
             {/* Brand Section */}
             <div className="footer-brand">
               <h3 className="brand-title">
-                <i className="bi bi-heart-pulse"></i>
+                <img src={logo} alt="Diyetisyenim Logo" className="footer-logo-img me-2" />
                 Diyetisyenim
               </h3>
               <p className="brand-description">
